@@ -1,0 +1,86 @@
+//Project id = sih-login-434617
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://res.cloudinary.com/dludtk5vz/image/upload/v1725458621/orbnqyaydkvmkhjolt46.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .signUpBox {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #4a235a;
+    text-align: center;
+  }
+  
+  .inputBox {
+    position: relative;
+    margin-bottom: 20px;
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+      border: none;
+      border-bottom: 2px solid #4a235a;
+      outline: none;
+      background: transparent;
+    }
+  
+    label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #4a235a;
+      font-size: 16px;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+  
+    input:focus ~ label,
+    input:valid ~ label {
+      top: -20px;
+      left: 0;
+      color: #4a235a;
+      font-size: 14px;
+    }
+  
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+      display: block;
+    }
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #4a235a, #00008b);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #00008b, #4a235a);
+  }

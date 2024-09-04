@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url('https://res.cloudinary.com/dludtk5vz/image/upload/v1725458621/orbnqyaydkvmkhjolt46.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginBox {
+    width: 35%;
+    background-color: rgba(255, 255, 255,0.5);
+    padding: 1rem;
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    backdrop-filter: blur(2.5px);
+    border: 2px solid red;
+
+    form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+
+        .btn {
+            width: 50%;
+            height: 2.5rem;
+            border-radius: 1rem;
+            outline: none;
+            border: none;
+            background-color: #4a235a;
+            color: #fff;
+        }
+
+        .btn:hover{
+            background-color: rgb(71, 112, 236);
+        }
+
+        .options{
+            display: flex;
+            margin-top: 3rem;
+            gap: 5rem;
+            font-size: 1rem;
+
+            a{
+                text-decoration: none;
+            }
+
+            a:hover{
+                color: #4a235a;
+            }
+        }
+    }
+
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: -1rem;
+    margin-bottom: 2.5rem;
+    color: #4a235a;
+    text-align: center;
+}
+
+
+
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+      border: none;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #4a235a;
+      outline: none;
+      background: transparent;
+    }
+  
+    label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #4a235a;
+      font-size: 1.5rem;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+  
+    /* Move label up when input is focused or has a value */
+    input:focus ~ label,
+    input:not(:placeholder-shown) ~ label {
+      top: -20px;
+      left: 0;
+      color: #4a235a;
+      font-size: 1rem;
+    }
+  
+    .icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      color: #4a235a;
+    }
+
+    
+  }
+  
